@@ -1,0 +1,148 @@
+	.cartao-pokemon{
+		display: none;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		border-radius: 10px;
+
+		
+	}
+
+	.cartao-pokemon .cartao-topo{
+		padding: 30px 40px 0;
+	}
+	.cartao-pokemon .nome{
+		margin-bottom: 5px;
+
+	}
+
+	.cartao-pokemon .tipo{
+		font-size: 12px;
+		background-color: #FFFFFF;
+		opacity: 0.7;
+		border-radius: 10px;
+		padding: 2px 10px;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	}
+	.cartao-pokemon .detalhes{
+		color: #FFFFFF;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.cartao-pokemon .cartao-imagem{
+		width: 550px;
+		height: 550px;
+		
+	}
+
+	.cartao-pokemon img{
+		max-height: 100%;
+
+	}
+
+	.cartao-pokemon .cartao-informacoes{
+		display: flex;
+		justify-content: space-between;
+		background-color: #FFFFFF;
+		padding: 80px 30px 50px;
+		margin-top: -70px;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+
+	}
+
+	.cartao-pokemon .cartao-informacoes h3{
+		font-size: 20px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #6B727A;
+
+	}
+
+	.cartao-pokemon .cartao-informacoes .status, .cartao-pokemon .cartao-informacoes .habilidades{
+		padding: 0 10px;
+		width: 180px;
+
+	}
+	.cartao-pokemon .cartao-informacoes .habilidades ul li, .cartao-pokemon .cartao-informacoes .status ul li{
+		border-bottom: 1PX solid #C3C4C5;
+		padding: 0 0 5px;
+		margin-bottom: 5px;
+		font-size: 15px;
+	}
+	.cartao-pokemon.aberto{
+		display: block;
+	}
+
+
+	.tipo-eletrico{
+		background-color: #dadfe8;
+	}
+	.tipo-agua{
+		background-color: #dadfe8;
+	}
+	.tipo-fogo{
+		background-color: #dadfe8;
+	}
+	.tipo-grama{
+		background-color: #dadfe8;
+	}
+	
+	.menu{
+	list-style:none;
+	float:left;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	justify-content:  space-between;
+    margin-bottom: 10px;
+	display: flex;
+	gap: 5px;
+	
+	}
+	.menu li{
+	position:relative;
+	float:left;
+	border-right:1px solid #c0c0c0;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	background-color: #6b727a;
+	}
+	.menu li a{
+		color:#333; 
+		text-decoration:none; 
+		padding:5px 10px; 
+		display:block;
+		color: #ffffff;
+	}
+	.menu li a:hover{
+	background:#333;
+	color:#fff;
+	-moz-box-shadow:0 3px 10px 0 #CCC;
+	-webkit-box-shadow:0 3px 10px 0 #ccc;
+	text-shadow:0px 0px 5px #fff;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	
+	}
+	.menu li  ul{
+	position:absolute;
+	top:35px;
+	left:0;
+	background-color:#fff;
+	display:none;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	}
+	.menu li:hover ul, .menu li.over ul{
+		display:block;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+	}
+	.menu li ul li{
+	border:1px solid #c0c0c0;
+	display:block;
+	width:150px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	}
