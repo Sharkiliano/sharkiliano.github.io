@@ -18,23 +18,20 @@ adicionar a classe ativo no selecionado
 
 // criar duas variaveis  para trabalhar com os elementos na tela
 
-const listaSelecaoPokemons = document.querySelectorAll('.instancia')
+const listaSelecaoPokemons = document.querySelectorAll('.pokemon')
 const pokemonsCard = document.querySelectorAll('.cartao-pokemon')
-const submenu = document.querySelectorAll('.submenu')
 
 
 
-listaSelecaoPokemons.forEach(instancia => {
+listaSelecaoPokemons.forEach(pokemon => {
     // vamos precisar trabalhar com evento de clique feito pelo usuario na listagem de pokemon
 
-    instancia.addEventListener('click', () => {
+    pokemon.addEventListener('click', () => {
         // -remover a classe averto só do cartão que está aberto
         const cartaoPokemonAberto = document.querySelector('.aberto')
         cartaoPokemonAberto.classList.remove('aberto')
-        
-
         // ao clicar em um pokemon da listagem pegamos o id do pokemon para saber qual cartão mostrar 
-       const idPokemonSelecionado = instancia.attributes.id.value
+       const idPokemonSelecionado = pokemon.attributes.id.value
 
        const idDoCartaoPokemonParaAbrir = 'cartao-' + idPokemonSelecionado
        const cartaoPokemonParaAbrir = document.getElementById(idDoCartaoPokemonParaAbrir)
@@ -44,11 +41,8 @@ listaSelecaoPokemons.forEach(instancia => {
         const pokemonAtivoNalistagem = document.querySelector('.ativo')
         pokemonAtivoNalistagem.classList.remove('ativo')
         
-        
-        
     // adicionar a classe ativo no selecionado
         const pokemonSelecionadoNaListagem = document.getElementById(idPokemonSelecionado)
         pokemonSelecionadoNaListagem.classList.add('ativo')
     })
-    
 })

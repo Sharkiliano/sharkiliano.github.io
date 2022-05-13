@@ -1,0 +1,43 @@
+.divmenu{
+	display:flex;
+	margin-right: 15px;
+	background-color: #dadfe8;
+	position: absolute;
+	top: 15px;
+}
+
+.menu .submenu{
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    margin-bottom: 10px;
+    background-color: #6b727a;
+    color: #ffffff;
+    padding: 0 5px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s ease-in-out;
+	float: left;
+}
+
+.submenu li{
+	position: relative;
+	float: left;
+}
+
+.menu .submenu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu .submenu img{
+    width: 25%;
+    border-radius: 50%;
+}
+
+.menu .submenu, span{
+    padding-right: 20px;
+}

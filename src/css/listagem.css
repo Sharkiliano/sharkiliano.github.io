@@ -1,8 +1,12 @@
 .listagem{
     max-width: 200px;
+	margin-top: 50px;
 }
+.listagemativo{
+	display: none;
+}	
 
-.listagem .instancia{
+.listagem .pokemon{
     display: flex;
     align-items: center;
     justify-content:  space-between;
@@ -17,30 +21,33 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.15s ease-in-out;
 }
-
-.submenu:hover ul{
-    display: block;
-}
-
-.listagem .instancia:hover{
+.listagem .pokemon:hover{
     transform: scale(1.05);
 }
 
-.listagem .instancia img{
+.listagem .pokemon img{
     width: 25%;
     border-radius: 50%;
 }
-
-.listagem .instancia, span{
-    padding-right: 20px;
-    
+.listagem .pokemon, span{
+    padding-right: 10px;
+	font-size: 15px;
 }
 
-.listagem .instancia.ativo{
+.listagem .pokemon.ativo{
     background-color: #5de650;
 }
-
-.listagem .instancia a{
+.listagem .pokemon a{
     text-decoration: none;
     color: #ffffff;
+}
+
+.pokedex nav{
+	display: flex;
+	width: auto;
+	height: 410px;
+	overflow-y: scroll;
+}
+::-webkit-scrollbar {
+display: none;
 }
