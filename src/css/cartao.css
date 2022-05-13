@@ -6,10 +6,11 @@
     
 }
 .cartoes-pokemon{
-	margin-top: 50px;
+	margin-top: 80px;
 	margin-right: 50px;
 	max-height: 950px;
 	max-width: 950px;
+	overflow: scroll;
 }
 .cartao-pokemon .cartao-topo{
     padding: 20px 40px 0;
@@ -66,7 +67,6 @@
 .cartao-pokemon .cartao-informacoes text{
     font-size: 20px;
     margin-bottom: 15px;
-	margin-top: 50px;
     position: relative;
 
 }
